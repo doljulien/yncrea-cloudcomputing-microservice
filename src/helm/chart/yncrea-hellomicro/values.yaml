@@ -1,0 +1,14 @@
+# Default values for yncrea-hellomicro.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: jurocknsail/yncrea-hellomicro
+  version: latest
+
+service:
+  type: NodePort
+  nodePort: 30080
+  debugNodePort: 30085
